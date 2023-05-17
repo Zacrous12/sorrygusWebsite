@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>sorry gus!</title>
+  <meta name="description" content="Band page for Sorry Gus!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+</head>
+<style>
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .permalink {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .permalink::before {
+    content: "#";
+    position: absolute;
+    left: -1em;
+    padding-right: 0.5em;
+    display: none;
+  }
+
+  .permalink:focus::before,
+  .permalink:hover::before {
+    display: block;
+  }
+
+  .sidebar nav {
+    background: var(--element-bg-color);
+    position: sticky;
+    top: var(--space);
+    /* padding: 0.5rem 0; */
+  }
+
+  .sidebar nav ul {
+    margin: 0;
+  }
+
+  .sidebar nav a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: var(--text-color);
+  }
+
+  .sidebar nav a:hover,
+  .sidebar nav a:focus {
+    color: white;
+    text-decoration-color: white;
+    background-color: var(--text-color);
+  }
+
+  #footer {
+    background: #fcca8a;
+    padding: var(--space);
+  }
+
+  html {
+      scrollbar-color: var(--color-primary-500) var(--color-primary-100);
+    }
+
+    ::-webkit-scrollbar {
+      background-color: #fee7dc;
+      width: 12px;
+      height: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #f590d8;
+    } 
+
+</style>
+
+<body>
+  <div id="app">
+
+    <img id="logo" src="images/logo.png">
+
+    <div id="main" class="has-sidebar">
+      <div class="sidebar">
+        <nav>
+          <ul class="nav">
+            <li><a href="#album">Album</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#shows">Shows</a></li>
+            <li><a href="#media">Media</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <div id="album" class="figure">    
+            <a href="https://open.spotify.com/artist/2zxqb7z01uOzT2It4IxD1c"><img class="Sirv image-main" src="images/image.png"></a>
+            <a href="https://open.spotify.com/artist/2zxqb7z01uOzT2It4IxD1c"><img class="Sirv image-hover" src="images/better.png"></a>
+        </div>
+        <section id="twitter">
+            <a  class="twitter-timeline" href="https://twitter.com/sorrygusVT?ref_src=twsrc%5Etfw">Tweets by sorrygusVT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        
+        <section>
+            <h2 id="shows"><a class="permalink" href="#shows" title="Permalink to Shows">Shows</a></h2>
+
+            <ul>
+                <li>6/94/20 The Wagon Wheel, Bedford, Alabama</li>
+                <li>6/98/20 Another Hole in the Wall, Panama, Florida</li>
+                <li>6/99/20 The Inn, Winston, Maine</li>
+            </ul>
+        </section>
+
+        <section>
+          <h2 id="media"><a class="permalink" href="#media" title="Permalink to Media">Media</a></h2>
+
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wfyuOdncPTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+        </section>
+      </main>
+    </div>
+
+    <footer id="footer">
+      <div id="footerDiv" class="container container-wide">
+        <a href="https://twitter.com/sorrygusVT">Twitter</a>
+        <a href="https://www.youtube.com/@sorrygusvt/about">YouTube</a>
+        <a id="email" href="mailto: sorrygusvt@gmail.com">Email</a>
+        <a href="https://open.spotify.com/artist/2zxqb7z01uOzT2It4IxD1c">Spotify</a>
+        <a href="https://www.instagram.com/sorrygus.vt/">Instagram</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

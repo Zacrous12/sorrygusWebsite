@@ -10,9 +10,9 @@
 
 :root {
     /* Fonts */
-    --font-body: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Libre Franklin', Roboto, 'Helvetica Neue', Arial, sans-serif;
     --font-head: var(--font-body);
-    --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    --font-mono: 'Roboto Slab', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
     /* --font-icon: null; */
   
     /* Colors */
@@ -252,6 +252,7 @@
   
   p, .txt-p {
     margin-bottom: var(--flow-space);
+    font-family: var(--font-mono);
   }
   
   /* Heading typography */
